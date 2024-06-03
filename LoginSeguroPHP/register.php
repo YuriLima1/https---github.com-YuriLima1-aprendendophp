@@ -4,11 +4,11 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <haed>
+    <head>
         <meta charset="UTF-8">
     <title>Secure Login: Registration Form</title> <!-- O texto vai aparecer na aba do navegador. -->
     <script type="text/JavaScript" src="js/sha512.js"></script>
-    <script type="tex/JavaScript" src="js/forms.js"></script>
+    <script type="text/JavaScript" src="js/forms.js"></script>
     <link rel="stylesheet" href="styles/main.css" /> <!-- Vincula uma folha de estilo externa (CSS) ao documento HTML atual. -->
 </head>
 <ul>
@@ -16,12 +16,12 @@
     set or if the registration script caused an error -->
     <h1>Register with us</h1> <!-- Uma linha de código que é feita para criar um cabeçalho nivel 1 que é a mais importante. -->
     <?php
-        if(!empty($error_msg)){ //
+        if(!empty($error_msg)) { //
             echo $error_msg;
         }
     ?>
     <ul> <!-- Uma tabela não ordenada. -->
-        <li>Os nomes de usuários dever conter apenas digitos, 
+        <li>Os nomes de usuários devem conter apenas digitos, 
         letras maiúsculas e minúsculas e underlines ("_")</li> <!-- Representa um item de lista em uma tabela não ordenada. -->
         <li>Emails devem seguir um formato válido para email.</li>
         <li>As senhas devem ter no mínimo 6 caracteres.</li>
@@ -38,9 +38,9 @@
         method="post"
         name="registration_form"> <!-- Este formulário enviará os dados para o mesmo script PHP ($_SERVER['PHP_SELF']) que está sendo executado quando o formulário é exibido. -->
       
-      Username: <input type='text'
-        name='username'
-        id='username' /><br> <!-- Cria um campo de texto onde os usuários podem inserir seu Nome de Usuário. -->
+      Username: <input type="text"
+        name="username"
+        id="username" /><br> <!-- Cria um campo de texto onde os usuários podem inserir seu Nome de Usuário. -->
       Email: <input type="text" name="email" id="email" /><br> <!-- Cria um campo de texto onde os usuários podem inserir seu endereço de e-mail. -->
       Password: <input type="password"
             name="password"
@@ -51,11 +51,11 @@
       <input type="button"
         value="Register"
         onclick="return regformhash(this.form,
-                this.form.username,
-                this.form.email,
-                this.form.password,
-                this.form.confirmpwd);" /> <!-- Cria um botão clicavel chamado 'Register' para registrar todos os textos que foram preenchidos. -->
+                        this.form.username,
+                        this.form.email,
+                        this.form.password,
+                        this.form.confirmpwd);" /> <!-- Cria um botão clicavel chamado 'Register' para registrar todos os textos que foram preenchidos. -->
     </form>
-    <p>Return to the <a href="index.php">login page</a>.</p> <!-- Este parágrafo vai permitir que os usuários volte para a página de login. -->
+    <p>Return to the <a href="login.php">login page</a>.</p> <!-- Este parágrafo vai permitir que os usuários volte para a página de login. -->
 </body>
 </html>

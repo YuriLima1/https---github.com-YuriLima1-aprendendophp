@@ -1,5 +1,5 @@
 <?php
-    include_once 'includes/functions.php'; // Vai incluir e avaliar o arquivo especificado durante a execução do script.
+    include_once 'functions.php'; // Vai incluir e avaliar o arquivo especificado durante a execução do script.
 
     sec_session_start(); // Inicia uma sessão com medidas de segurança adicionais.
 

@@ -8,7 +8,7 @@
         // Limpa e valida os dados passados em
         $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING); // Remove as tags HTML e caracteres especiais que podem ser usadas em ataques XSS (Cross-Site Scripting).
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL); // Remove todos os caracteres ilegais de um endereço de e-mail, só deixando as caracteres válidas.
-        $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Garanti que qualquer alteração adicional no valor do e-mail seja sanitarizada.
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL); // Garanti que qualquer alteração adicional no valor do e-mail seja sanitarizada.
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) { // Verifica se o endereço de e-mail fornecido é válido. Se não for, ele adiciona a mensagem de erro.
         // Email inválido
         $error_msg .= '<p class="error">O endereço de email digitado não é válido</p>'; // Mensagem de erro que é usado para exibir erros de usuários.
@@ -41,7 +41,6 @@
     }else {
         $error_msg .= '<p class="error">Database error</p>'; // Se a condição (num_rows == 1) não for atendida, esta linha vai adicionar uma mensagem de erro com á variável '$error_msg'.
     }
-
     // LISTA DE TAREFAS:
     // Precisamos bolar soluções para quando o usuário não tem
     // direito a se registra, verificando que tipo de usuário está tentando
