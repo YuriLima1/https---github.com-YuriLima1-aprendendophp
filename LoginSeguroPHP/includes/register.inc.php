@@ -1,3 +1,4 @@
+
 <?php
     include_once 'db_connect.php'; // Vai incluir e avaliar o arquivo especificado durante a execução do script.
     include_once 'psl-config.php'; // Vai incluir e avaliar o arquivo especificado durante a execução do script.
@@ -54,7 +55,7 @@
         $password = hash('sha512', $password . $random_salt);
 
         // Inserir o novo usuário no banco de dados
-        if($insert_stmt = $mysqli->prepare("INSERT INTO members (username, email
+        if($insert_stmt = $mysqli->prepare("INSERT INTO members (username, email,
         password, salt) VALUES (?, ?, ?, ?)")) {
             $insert_stmt->bind_param('ssss', $username, $email, $password, $random_salt);
             // Executar a tarefa pré-estabelecida.

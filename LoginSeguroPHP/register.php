@@ -40,14 +40,14 @@
       
       Username: <input type="text"
         name="username"
-        id="username" /><br> <!-- Cria um campo de texto onde os usuários podem inserir seu Nome de Usuário. -->
-      Email: <input type="text" name="email" id="email" /><br> <!-- Cria um campo de texto onde os usuários podem inserir seu endereço de e-mail. -->
+        id="username" value="rodrigo"/><br> <!-- Cria um campo de texto onde os usuários podem inserir seu Nome de Usuário. -->
+      Email: <input type="text" name="email" id="email" value="rodrigo@senac.com" /><br> <!-- Cria um campo de texto onde os usuários podem inserir seu endereço de e-mail. -->
       Password: <input type="password"
             name="password"
-            id="password"/><br> <!-- Cria um campo de texto oculto onde os usuários podem inserir sua senha. -->
+            id="password" value="$En4c2024"/><br> <!-- Cria um campo de texto oculto onde os usuários podem inserir sua senha. -->
       Confirm password: <input type="password"
                 name="confirmpwd"
-                id="confirmpwd" /><br> <!-- Cria um campo de texto oculto onde os usuários podem inserir sua senha novamente. -->
+                id="confirmpwd" value="$En4c2024"/><br> <!-- Cria um campo de texto oculto onde os usuários podem inserir sua senha novamente. -->
       <input type="button"
         value="Register"
         onclick="return regformhash(this.form,
@@ -56,6 +56,6 @@
                         this.form.password,
                         this.form.confirmpwd);" /> <!-- Cria um botão clicavel chamado 'Register' para registrar todos os textos que foram preenchidos. -->
     </form>
-    <p>Return to the <a href="login.php">login page</a>.</p> <!-- Este parágrafo vai permitir que os usuários volte para a página de login. -->
+    <p>Return to the <a href="index.php">login page</a>.</p> <!-- Este parágrafo vai permitir que os usuários volte para a página de login. -->
 </body>
 </html>

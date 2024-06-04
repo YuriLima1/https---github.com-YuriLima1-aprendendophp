@@ -94,8 +94,6 @@ function regformhash(form, uid, email, password, conf) {
              conf.value = "";
              // Finalizando, envie o formulário.      
              form.submit();
-             alert("cheguei aqui");
-            alert(p.value)
              return true;
             
 
