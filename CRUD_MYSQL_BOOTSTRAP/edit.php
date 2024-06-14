@@ -44,4 +44,16 @@ require_once 'header.php';
                                     <input type="text" id="lastname" name="lastname" value="<?php echo $row['lastname']; ?>" class="form-control"><br>
 
                                     <label for="address">Address</label>
-                                    <input
+                                    <textarea rows="4" name="address" class="form-control"><?php echo $row['address']; ?></textarea><br>
+
+                                    <label for="contact">Contact</label>
+                                    <input type="text" name="contact" id="contact" value="<?php echo $row['contact']; ?>" class="form-control"><br>
+                                    <br>
+                                    <input type="submit" name="update" class="btn btn-success" value="Update">
+                            </form>
+                    </div>
+            </div>
+            </div>
+</div>
+<?php
+require_once 'footer.php';
