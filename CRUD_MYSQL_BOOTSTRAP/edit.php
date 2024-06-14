@@ -17,7 +17,7 @@ require_once 'header.php';
                     if( $con->query($sql) === TRUE ){
                             echo "<div class='alert alert-success'>Successfully updated user</div>";
                     }else{
-                        echo "<div class='alert alert-danger'>Error: There was an error while updating user info</div>";
+                            echo "<div class='alert alert-danger'>Error: There was an error while updating user info</div>";
                     }
                 }
             }
@@ -36,5 +36,12 @@ require_once 'header.php';
                             <h3><i class="glyphicon glyphicon-plus"></i>&nbsp;MODIFY User</h3>
                             <form action="" method="POST">
                                     <input type="hidden" value="<?php echo $row['user_id']; ?>" name="userid">
+                                    
                                     <label for="firstname">Firstname</label>
-                                    <input type="text" id="firstname" name="firstname" value="<?php echo $row['firstname']"
+                                    <input type="text" id="firstname" name="firstname" value="<?php echo $row['firstname']; ?>" class="form-control"><br>
+
+                                    <label for="lastname">Lastname</label>
+                                    <input type="text" id="lastname" name="lastname" value="<?php echo $row['lastname']; ?>" class="form-control"><br>
+
+                                    <label for="address">Address</label>
+                                    <input
