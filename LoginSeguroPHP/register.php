@@ -16,9 +16,9 @@
     set or if the registration script caused an error -->
     <h1>Register with us</h1> <!-- Uma linha de código que é feita para criar um cabeçalho nivel 1 que é a mais importante. -->
     <?php
-        if(!empty($error_msg)) { //
+        if(!empty($error_msg)) { 
             echo $error_msg;
-        }
+        } // Vai verifica se o '$error_msg' não está vazio. Se '$error_msg' contém uma mensagem de erro, essa mensagem será exibida ao usuário.
     ?>
     <ul> <!-- Uma tabela não ordenada. -->
         <li>Os nomes de usuários devem conter apenas digitos, 
