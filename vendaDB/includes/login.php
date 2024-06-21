@@ -1,14 +1,8 @@
 <?php
     
-    require_once 'includes/connect.php';
+    require_once 'connect.php';
 
-    sec_session_start();
-
-    if (login_check($mysqli) == true){
-        $logged = 'Logado';
-    }else{
-        $logged = 'Deslogado';
-    }
+    
 ?>
 
 <!DOCTYPE html>
