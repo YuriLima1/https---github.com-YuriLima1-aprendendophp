@@ -2,7 +2,7 @@
 $localhost = "localhost";
 $username = "root";
 $password = "";
-$dbname  = "vendadb"; 
+$dbname  = "vendaDB"; 
 $con = mysqli_connect("$localhost", "$username", "$password", "$dbname");
 
 if($con->connect_error) {    
