@@ -2,7 +2,7 @@
     
     require_once 'includes/connect.php';
 
-    sec_ssion_start();
+    sec_session_start();
 
     if (login_check($mysqli)== true){
         $logged = 'Logado';
