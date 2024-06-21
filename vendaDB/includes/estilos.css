@@ -4,8 +4,11 @@ h1{
 p{
     text-align: center;
 }
-body{
+img{
     background-color: rgba(156, 156, 156, 0.582);
+    border: 50px;
+    border-width: 2px 5px 3px 6px;
+    border: 10px solid black;
 }
 
 p1{

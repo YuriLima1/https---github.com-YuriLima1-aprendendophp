@@ -4,7 +4,7 @@
 
     sec_session_start();
 
-    if (login_check($mysqli)== true){
+    if (login_check($mysqli) == true){
         $logged = 'Logado';
     }else{
         $logged = 'Deslogado';
