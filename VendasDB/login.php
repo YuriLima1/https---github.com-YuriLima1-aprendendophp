@@ -31,7 +31,7 @@
             Email: <input type="text" name="email" />            
     
             Senha: <input type="password" name="password" id="password"/>            
-            <input type="button" value="Login" onclick="formhash(this.form, this.form.password);" />         
+            <input type="button" value="Login" onclick="formhash(this.form, this.form.password)"; />         
         </form>
 
         <p>Se você não tem conta, porfavor <a href="cadastro.php">Cadastre-se</a></p> 
