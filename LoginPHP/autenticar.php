@@ -24,8 +24,8 @@
             $user = $_POST["user"]; // Você preenchera o nome do usuário.
             $pass = $_POST["pass"]; // Você preenchera a senha.
 
-            $consulta = mysqli_query($conexao, "SELECT * FROM usuarios WHERE usuario = '$user' AND senha = '$pass'") or die (mysqli_error($conexao)); // Vai executa o SELECT na tabela "usuarios" do banco de dados, procurando por uma linha onde o nome de usuário (usuario) e a senha (senha) correspondam aos valores fornecidos.
-
+            $consulta = mysqli_query($conexao, "SELECT * FROM usuarios WHERE usuario = '$user' AND senha = '$pass'") or die (mysqli_error($conexao)); 
+            // Vai executa o SELECT na tabela "usuarios" do banco de dados, procurando por uma linha onde o nome de usuário (usuario) e a senha (senha) correspondam aos valores fornecidos.
             $linhas = mysqli_num_rows($consulta); // Determina o número de linhas retornadas por uma consulta SQL executada anteriormente.
 
             if($linhas == 0) { // Aqui você será movido para a página de login caso o nome de usuário e a senha estiver incorreta.

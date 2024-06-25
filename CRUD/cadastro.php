@@ -122,7 +122,7 @@ if(isset($_GET["id"]) && is_numeric($_GET["id"]))
 <body>
     <?php
         if(isset($erro))
-            echo '<div style="color:#F00">'.$erro.'</div><br/><br/>';
+            echo '<div style="color:#f00">'.$erro.'</div><br/><br/>';
         else
         if(isset($sucesso))
             echo '<div style="color:#00f">'.$sucesso.'</div><br/><br/>';
