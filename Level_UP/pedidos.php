@@ -59,6 +59,7 @@ $data_ped = isset($_POST["data_ped"]) ? $_POST["data_ped"] : "";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido | Level UP</title>
     <link rel="stylesheet" href="CSS/estilos.css" type="text/css">
+    <link rel="shortcut icon" href="multimidia/Pedido.png" type="image/x-icon">
     <style>
         * {
             text-align: center;
