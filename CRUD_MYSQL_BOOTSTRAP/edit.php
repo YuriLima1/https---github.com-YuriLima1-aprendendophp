@@ -59,4 +59,4 @@ require_once 'header.php'; // Vai garantir que o 'header.php' seja incluido apen
             </div>
 </div>
 <?php
-require_once 'footer.php';
+require_once 'footer.php'; // Inclui um arquivo chamado 'footer.php' na página atual e com isso criara um rodapé.
