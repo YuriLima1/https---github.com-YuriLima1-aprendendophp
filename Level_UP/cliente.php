@@ -32,8 +32,7 @@ if (isset($_POST['register'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
     <link rel="shortcut icon" href="multimidia/Cadastro.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/ES.css">
-    <link rel="stylesheet" href="CSS/ES.css" type="text/css">
+    <link rel="stylesheet" href="Style/style.css" type="text/css">
     <style>
         * {
             text-align: center;
@@ -47,7 +46,8 @@ if (isset($_POST['register'])) {
     ?>
 
     <form action="" method="post" name="registration_form">
-
+    <fieldset>
+        <legend>Registro</legend>
         Nome: <br> 
         <input type="text" name="nome" placeholder="Digite seu nome"> <br>
         <br>
@@ -71,7 +71,7 @@ if (isset($_POST['register'])) {
         Prefiro não dizer <br>
         <input type="radio" name="genero" id="nao_dizer" value="nao_dizer"> <br>
         <br>
-        SELECIONE SE VOCÊ USA CPF OU CNPJ: <br>
+        Selecione o seu CPF ou CNPJ: <br>
         <br>
         CPF/Cliente <br>
         <input type="radio" name="cpf_cnpj" id="cpf" value="cpf"> <br>
@@ -81,8 +81,8 @@ if (isset($_POST['register'])) {
         <br>
         <input type="submit" name="register" value="Cadastrar-se">
         <br><br>
-        <a href="index.php"> Deseja voltar para o clique </a>
-
+        <p>Deseja voltar para o <a class="aqui" href="index.php">Inicio</a></p>
+    <fieldset>
     </form>
     <?php
     require_once 'footer.php';

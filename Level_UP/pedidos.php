@@ -1,5 +1,4 @@
 <?php
-
 include_once 'includes/db_connect.php';
 
 echo "<div class='container'>";
@@ -13,15 +12,15 @@ if( $result->num_rows > 0)
     <h2> of all Users </h2>
     <table class="table table-bordered table-striped">
             <tr>
-                        <td>name_cli</td>
-                        <td>telefone</td>
-                        <td>rua</td>
-                        <td>cidade</td>
-                        <td>cpf</td>
-                        <td width="70px">EDIT</td>
-                </tr>
+                    <td>name_cli</td>
+                    <td>telefone</td>
+                    <td>rua</td>
+                    <td>cidade</td>
+                    <td>cpf</td>
+                    <td width="70px">EDIT</td>
+            </tr>
         <?php
-        while( $row = $result->fetch_assoc()) {
+        while($row = $result->fetch_assoc()) {
                 echo "<form action='' method='POST'>";      //added
                 echo "<input type='hidden' value='". $row['user_id']."' name='userid'/>";
     //added
@@ -38,20 +37,15 @@ if( $result->num_rows > 0)
         } 
         ?>
         </table>
-<?php
-
-</div>
-
 
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido | Level UP</title>
-    <link rel="stylesheet" href="CSS/estilos.css" type="text/css">
+    <link rel="stylesheet" href="Style/style.css" type="text/css">
     <link rel="shortcut icon" href="multimidia/Pedido.png" type="image/x-icon">
 
 </head>

@@ -1,4 +1,10 @@
-
+<style>
+    header{
+        
+        margin: 100;
+        padding: 100;
+    }
+</style>
 <header>
         <ul class="nav">
             <li><a href="index.php">Home</a></li>

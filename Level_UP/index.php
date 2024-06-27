@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level UP & Lan House</title>
     <link rel="shortcut icon" href="multimidia/Inicio.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/ES.css">
-    <link rel="stylesheet" href="CSS/ES.css" type="text/css">
+    <link rel="stylesheet" href="Style/style.css" type="text/css">
      
 </head>
 <body>
