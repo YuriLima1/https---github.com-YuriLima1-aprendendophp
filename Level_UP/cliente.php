@@ -19,7 +19,7 @@ if (isset($_POST['register'])) {
         if ($con->query($sql) === TRUE) {
             echo "<div class='alert alert-success'>Usuário registrado com sucesso!</div>";
         } else {
-            echo "<div class='alert alert-danger'>Erro: " . $con->error . "</div>";
+            echo "Erro: . $con->error . ";
         }
     }
 }
@@ -32,8 +32,8 @@ if (isset($_POST['register'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
     <link rel="shortcut icon" href="multimidia/Cadastro.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="CSS/estilos.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ES.css">
+    <link rel="stylesheet" href="CSS/ES.css" type="text/css">
     <style>
         * {
             text-align: center;
@@ -74,10 +74,10 @@ if (isset($_POST['register'])) {
         SELECIONE SE VOCÊ USA CPF OU CNPJ: <br>
         <br>
         CPF/Cliente <br>
-        <input type="radio" name="cpf" id="cpf" value="cpf"> <br>
+        <input type="radio" name="cpf_cnpj" id="cpf" value="cpf"> <br>
         <br>
         CNPJ/Jurídico <br>
-        <input type="radio" name="cpf" id="cnpj" value="cnpj"> <br>
+        <input type="radio" name="cpf_cnpj" id="cnpj" value="cnpj"> <br>
         <br>
         <input type="submit" name="register" value="Cadastrar-se">
         <br><br>
