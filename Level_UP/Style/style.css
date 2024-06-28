@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgba(83, 3, 3, 0.877);
+    background-color: rgba(255, 255, 255, 0.877);
 }
 
 main {
@@ -20,14 +20,14 @@ footer {
 }
 hr {
     height: 1px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
     border:#000;
 }
  
 header {
 
-  background: rgb(80,97,69);
-  background: linear-gradient(180deg, rgba(80,97,69,1) 0%, rgba(9,149,16,1) 100%);
+  background: rgb(20, 2, 119);
+  background: linear-gradient(180deg, rgb(6, 4, 44) 0%, rgba(1, 0, 85, 0.836) 100%);
   padding: 20px;
 }
 
@@ -90,7 +90,7 @@ input[type=text],
 }
 
 .form  {
-    background-color: rgb(102, 143, 100);
+    background-color: rgb(71, 71, 71);
     border: #000 1px solid;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
@@ -105,16 +105,16 @@ fieldset {
       margin-top: 10em;
       border-radius: 6px;
       padding: 5px;
-      background-color: #a51502;
-      background: linear-gradient(60deg, #a73e01, #778b04c2, #5e9100, #298126, #337c31, #3d753b, #446843, #374b3b, #4c6450, #5d7e63);
+      background-color: #363636;
+      background: linear-gradient(60deg, #363636, #424242c2, #2e2e2e, #202020, #131313, #0c0c0c, #0c0c0c, #070707, #000000, #19251c);
       background-size: 200% 200%;
       animation: waveAnimation 5s ease infinite;
 }
 
 legend {
-  color: #ff0000;
-  background-color:  rgba(207, 0, 0, 0.719);
+  color: #292929;
+  background-color:  rgba(14, 0, 207, 0.548);
   border-radius: 5px;
   padding: 10px;
-  border: 1px solid rgb(0, 165, 49);
+  border: 1px solid rgb(255, 0, 200);
 }
