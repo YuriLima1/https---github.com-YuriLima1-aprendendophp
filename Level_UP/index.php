@@ -63,6 +63,7 @@
     <label for="slide2"></label>
     <label for="slide3"></label>
   </div>
+  
 </div>
 </main>
     

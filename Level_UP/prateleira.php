@@ -7,8 +7,8 @@ require_once 'includes/db_connect.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="multimidia/Prateleira.png" type="image/x-icon">
     <title>Administração de Produtos | Level UP & Lan House</title>
+    <link rel="shortcut icon" href="multimidia/Prateleira.png" type="image/x-icon">
     <link rel="stylesheet" href="Style/style.css" type="text/css">
 </head>
 <body>
@@ -54,7 +54,7 @@ require_once 'includes/db_connect.php';
     ?>
 
     <h2>Administração de Produtos</h2>
-    <table border="1" class="tabelapra">
+    <table border="2" class="tabelapra">
         <tr>
             <th>Id do Produto</th>
             <th>Nome do Produto</th>
@@ -67,11 +67,11 @@ require_once 'includes/db_connect.php';
 
         <?php
         if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
+            while ( $row = $result->fetch_assoc()) {
+                echo "<tr>";
                 echo "<form action='' method='POST'>";
                 echo "<input type='hidden' value='" . $row['id_prod'] . "' name='id_prod' />";
                 
-                echo "<tr>";
                 echo "<td>" . $row['id_prod'] . "</td>";
                 echo "<td><input type='text' name='nome_prod' value='" . $row['nome_prod'] . "' /></td>";
                 echo "<td><input type='text' name='preco' value='" . $row['preco'] . "' /></td>";
@@ -81,14 +81,13 @@ require_once 'includes/db_connect.php';
                 echo "<td><input type='submit' name='delete' value='Disable' class='delete' style='cursor: pointer;' /></td>";
                 echo "<td><input type='submit' name='edit' value='Edit' class='edit' style='cursor: pointer;' /></td>";
                 
-                echo "</tr>";
                 echo "</form>";
+                echo "</tr>";
             }
         } else {
             echo "<tr><td colspan='7'>Nenhum produto encontrado</td></tr>";
         }
         ?>
-
     </table>
 </body>
 </html>
