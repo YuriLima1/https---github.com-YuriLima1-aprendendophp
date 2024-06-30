@@ -48,6 +48,7 @@ if (isset($_POST['register'])) {
     <form action="" method="post" name="registration_form">
     <fieldset>
         <legend>Registro</legend>
+
         Nome: <br> 
         <input type="text" name="nome" placeholder="Digite seu nome"> <br>
         <br>
@@ -82,10 +83,13 @@ if (isset($_POST['register'])) {
         <input type="submit" name="register" value="Cadastrar-se">
         <br><br>
         <p>Deseja voltar para o <a class="aqui" href="index.php">Inicio</a></p>
-    <fieldset>
+
+    </fieldset>
     </form>
+
     <?php
     require_once 'footer.php';
     ?>
+
 </body>
 </html>

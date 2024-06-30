@@ -6,7 +6,11 @@
     <title>Level UP & Lan House</title>
     <link rel="shortcut icon" href="multimidia/Inicio.png" type="image/x-icon">
     <link rel="stylesheet" href="Style/style.css" type="text/css">
-     
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -45,13 +49,13 @@
   <input type="radio" name="carousel" id="slide3">
   <div class="slides">
     <div class="slide">
-      <img src="multimidia/prod1.jpg" alt="Slide 1">
+      <img src="multimidia/prod1.png" alt="Slide 1">
     </div>
     <div class="slide">
-      <img src="multimidia/prod2.jpg" alt="Slide 2">
+      <img src="multimidia/prod2.png" alt="Slide 2">
     </div>
     <div class="slide">
-      <img src="multimidia/prod3.jpg" alt="Slide 3">
+      <img src="multimidia/prod3.png" alt="Slide 3">
     </div>
   </div>
   <div class="navigation">
